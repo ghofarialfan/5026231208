@@ -1,0 +1,48 @@
+body {
+    font-family: Roboto ;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    background: conic-gradient(red, green, blue);
+}
+
+p{
+    text-decoration: solid;
+}
+a:link{
+    color: rgb(138, 43, 226);
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(29, 230, 66, 0.641);
+    text-decoration: solid;
+    font-weight: bold;
+}
+a:visited{
+    color: rgb(138, 43, 226);
+    text-decoration: none;
+}
+
+.kalimatpembuka {
+    font-size: large;
+    border: rgb(235, 42, 25);
+    border-radius: 50px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.multicolumn {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-rule-width: 4px;
+    column-rule-color: blueviolet;
+    column-width: 5px;
+    
+}
+.author {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
