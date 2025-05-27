@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\DosenController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,15 @@ Route::view('js2','js2');
 Route::view('linktree','linktree');
 Route::view('ets','ets');
 Route::view('danantara','danantara');
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+
+
+
+
+Route::get('/dosen', [DosenController::class, 'index']);
+
+
