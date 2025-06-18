@@ -6,6 +6,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SofaController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\BelanjaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,3 +69,9 @@ Route::get('/karyawan/edit/{id}', [KaryawanController::class, 'edit']);
 Route::post('/karyawan/update', [KaryawanController::class, 'update']);
 Route::delete('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
+
+// Route CRUD Belanja
+Route::get('/belanja', [BelanjaController::class, 'index']);
+Route::get('/belanja/tambah', [BelanjaController::class, 'tambah']);
+Route::post('/belanja/store', [BelanjaController::class, 'store']);
+Route::get('/belanja/hapus/{id}', [BelanjaController::class, 'hapus']);
