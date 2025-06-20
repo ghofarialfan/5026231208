@@ -7,6 +7,9 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SofaController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\BelanjaController;
+use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\NewKaryawanController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,3 +78,15 @@ Route::get('/belanja', [BelanjaController::class, 'index']);
 Route::get('/belanja/tambah', [BelanjaController::class, 'tambah']);
 Route::post('/belanja/store', [BelanjaController::class, 'store']);
 Route::get('/belanja/hapus/{id}', [BelanjaController::class, 'hapus']);
+
+//route latihan 1 (pagecounter)
+Route::get('/pagecounter', [PageCounterController::class, 'show']);
+
+// Route CRUD newKaryawan
+Route::get('/newkaryawan', [NewKaryawanController::class, 'index']);
+Route::get('/newkaryawan/tambah', [NewKaryawanController::class, 'tambah']);
+Route::post('/newkaryawan/store', [NewKaryawanController::class, 'store']);
+Route::get('/newkaryawan/edit/{id}', [NewKaryawanController::class, 'edit']);
+Route::post('/newkaryawan/update', [NewKaryawanController::class, 'update']);
+Route::delete('/newkaryawan/hapus/{id}', [NewKaryawanController::class, 'hapus']);
+Route::get('/newkaryawan/cari', [NewKaryawanController::class, 'cari']);

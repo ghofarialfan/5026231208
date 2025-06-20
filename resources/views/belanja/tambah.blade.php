@@ -7,7 +7,7 @@
     <br />
 
     <form action="/belanja/store" method="post">
-        {{ csrf_field() }}
+        @csrf
         <div class="row">
             <div class="col-3">
                 <p>Kode Barang</p>
